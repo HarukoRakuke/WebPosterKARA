@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'QuinqueFive'; /* название шрифта */
+  src: url(../fonts/QuinqueFive.ttf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'Press_Start_2P'; /* название шрифта */
+  src: url(../fonts/PressStart2P-Regular.ttf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'ksms'; /* название шрифта */
+  src: url(../fonts/ksms.otf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'Atonic'; /* название шрифта */
+  src: url(../fonts/atonic.otf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'Boris'; /* название шрифта */
+  src: url(../fonts/HSEFonts_Gernik_Boris.ttf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'Druzhok'; /* название шрифта */
+  src: url(../fonts/DRUZHOK.otf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'Ghostsigns'; /* название шрифта */
+  src: url(../fonts/GhostSigns.ttf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'Mrakobes'; /* название шрифта */
+  src: url(../fonts/mrakobes.otf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'Rezok'; /* название шрифта */
+  src: url(../fonts/Rezok.ttf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'Truin'; /* название шрифта */
+  src: url(../fonts/Truin-Regular.ttf); /* ссылка на файл */
+}
+@font-face {
+  font-family: 'VPCH2'; /* название шрифта */
+  src: url(../fonts/VPCH2.otf); /* ссылка на файл */
+}

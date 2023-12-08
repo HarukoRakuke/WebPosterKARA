@@ -1,0 +1,237 @@
+@keyframes shake {
+  0% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateX(20px);
+  }
+  30% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateZ(-10px);
+  }
+  53% {
+    transform: translateX(45px);
+  }
+  54% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateZ(10px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes ohmygod {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-80%);
+  }
+}
+@keyframes iwanttokillthem {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-52.1%);
+  }
+}
+@keyframes idontwanttodie {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(100%);
+  }
+}
+@keyframes whatfor {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(100%);
+  }
+}
+@keyframes first_glitch {
+  0% {
+    content: '>> %!С+(*_:\00000a\00000axGDA.З2Nad54Ь.\00000a/Е’a*£fsdТАxGDA';
+  }
+  4% {
+    content: '>> x!С+(*А:\00000a\00000axыDA.@(dап54Ь.\00000a/Р8jh(%* 23&)£$';
+  }
+  8% {
+    content: '>> С?c+(*А:\00000a\00000aRы4A.*АЧ(d54Ь.\00000a/S’aТ2(?:аd6';
+  }
+  12% {
+    content: '>> Сиc+(мА:\00000a\00000aR2рA.НА234^ЗЬ.\00000a/С’a?d(t7re86';
+  }
+  16% {
+    content: '>> С c+(мА:\00000a\00000aК2рA.НА2 4^З.\00000a/С’?ф_4356ка';
+  }
+  20% {
+    content: '>> СиcмА:\00000a\00000aК2A.наЧ2 4^.\00000a/Р123т_6п4-5';
+  }
+  24% {
+    content: '>> СиcТмА:\00000a\00000aКаAа.На24^ 54.\00000a/Р С3н_6*>';
+  }
+  28% {
+    content: '>> СиСТЕмА:\00000a\00000aКаРа.На^А ТЬ.\00000a/23в_6234';
+  }
+  32% {
+    content: '>> СиСТЕмА:\00000a\00000aКаР.НА 62т.\00000aра*23в_а';
+  }
+  34% {
+    content: '>> СИ#ТЕмА:\00000a\00000aКАРА.ЧА! Ть.\00000aРАd*л?#';
+  }
+  38% {
+    content: '>> СИСТЕмА:\00000a\00000aК!&А.НА_ аТЬ.\00000aРАСши_в!а';
+  }
+  42% {
+    content: '>> СИСТЕ А:\00000a\00000aКАРА. ЧАТЬ.\00000aРАСшиф_ка';
+  }
+  46% {
+    content: '>> СИСТЕМА:\00000a\00000aКАРА.НаЧА Ь.\00000aРАсШИ _ Ка';
+  }
+  52% {
+    content: '>> СИСТЕМА:\00000a\00000aКАРА.НАЧАТЬ.\00000aРАСШИРОФВКА';
+  }
+  56% {
+    content: '>> СИСТЕМА:\00000a\00000aКАрА.НАЧ_АТЬ.\00000aРАС:ИФР!В4А';
+  }
+  57% {
+    content: '>> СИСТЕМА:\00000a\00000aКАРА.НАЧАТЬ.\00000aРАСШИРОФВКА';
+  }
+  100% {
+    content: '>> СИСТЕМА:\00000a\00000aКАРА.НАЧАТЬ.\00000aРАСШИРОФВКА';
+  }
+}
+@keyframes second_glitch {
+  0% {
+    content: '>> %!С+(*_:\00000a\00000axGDA.@б4^З2Аd54Ь.\00000a/Е’aТА';
+  }
+  4% {
+    content: '>> x!С+(*А:\00000a\00000axыDA.@об^Зч(dап54Ь.\00000a/Ж’n;А';
+  }
+  8% {
+    content: '>> С?c+(*А:\00000a\00000aRы4A.*B4^Зч(d54Ь.\00000a/S’aТd6';
+  }
+  12% {
+    content: '>> Сиc+(мА:\00000a\00000aR2рA.ОБ234^Зч2154Ь.\00000a/С’a?d6';
+  }
+  16% {
+    content: '>> С c+(мА:\00000a\00000aК2рA.ОБ24^Зч44.\00000a/С’?н_6';
+  }
+  20% {
+    content: '>> СиcмА:\00000a\00000aК2A.ОбС24^Зн454.\00000a/С123т_6';
+  }
+  24% {
+    content: '>> СиcТмА:\00000a\00000aКаAа.Об24^ 54.\00000a/С 23н_6';
+  }
+  28% {
+    content: '>> СиСТЕмА:\00000a\00000aКаРа.Об^Ра от.\00000a/23н_6';
+  }
+  32% {
+    content: '>> СиСТЕмА:\00000a\00000aКаР.ОбРА^боТАт.\00000aс23н_6';
+  }
+  34% {
+    content: '>> СИ#ТЕмА:\00000a\00000aКАРА.?б*АБ! 3ь.\00000aИГн*л';
+  }
+  38% {
+    content: '>> СИСТЕмА:\00000a\00000aК!&А.0Б_ РаТЬ.\00000aСИГн_л';
+  }
+  42% {
+    content: '>> СИСТЕ А:\00000a\00000aКАРА. РАБТАТЬ\00000a.СИГн_л';
+  }
+  46% {
+    content: '>> СИСТЕМА:\00000a\00000aКАРА.ОбРАбОТТЬ\00000a.СИгНАЛ';
+  }
+  52% {
+    content: '>> СИСТЕМА:\00000a\00000aКАРА.ОБРАБОТАТЬ\00000a.СИГНАЛ';
+  }
+  56% {
+    content: '>> СИСТЕМА:\00000a\00000aКАрА.ОБРА_БОТАТЬ\00000a.СИГ?НА';
+  }
+  57% {
+    content: '>> СИСТЕМА:\00000a\00000aКАРА.ОБРАБОТАТЬ\00000a.СИГНАЛ';
+  }
+  100% {
+    content: '>> СИСТЕМА:\00000a\00000aКАРА.ОБРАБОТАТЬ\00000a.СИГНАЛ';
+  }
+}
+@keyframes message_dissapear {
+  /* 20% {
+    visibility: hidden;
+  }
+  37% {
+    visibility: hidden;
+  }
+  40% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+  67% {
+    visibility: hidden;
+  }
+  81% {
+    visibility: visible;
+  } */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes message_stable {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes body_shake {
+  33% {
+    transform: translateX(-10px);
+  }
+  66% {
+    transform: translateX(10px);
+  }
+}
+@keyframes ghost1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+@keyframes ghost2 {
+  0% {
+    background-position: 0 -200%;
+  }
+  100% {
+    background-position: -100% -200%;
+  }
+}
+@keyframes ghost3 {
+  0% {
+    background-position: 0 -100%;
+  }
+  100% {
+    background-position: -100% -100%;
+  }
+}
+@keyframes button {
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
