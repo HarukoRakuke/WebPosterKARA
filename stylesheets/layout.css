@@ -8,7 +8,6 @@ body {
   border-left: 1px white solid;
   border-right: 1px white solid;
   position: relative;
-  /* animation: body_shake 0.15s linear infinite; */
 }
 section {
   position: relative;
@@ -32,7 +31,7 @@ h1 {
   white-space: nowrap;
   font-family: 'QuinqueFive';
   position: relative;
-  animation: ohmygod 1.5s linear infinite;
+  animation: ohmygod 2s linear reverse infinite;
   &:hover {
     animation-play-state: paused;
     animation: shake 0.5s linear infinite;
@@ -44,8 +43,7 @@ h1 {
   display: inline-block;
   white-space: nowrap;
   font-family: 'QuinqueFive';
-  position: relative;
-  animation: iwanttokillthem 5s linear infinite;
+  animation: iwanttokillthem 6s linear infinite;
   &:hover {
     animation-play-state: paused;
     animation: shake 0.5s linear infinite;
@@ -53,20 +51,21 @@ h1 {
 }
 .iwanttokillthem_wrap {
   font-size: 400px;
+  position: relative;
 }
 .idontwanttodie_wrap {
   transform: rotate(25deg);
   margin-top: -50px;
   position: relative;
   z-index: 2;
-  font-size: 70px;
+  font-size: 60px;
 }
 .idontwanttodie_wrap > h1 {
   color: white;
   display: inline-block;
   white-space: nowrap;
   font-family: 'QuinqueFive';
-  animation: idontwanttodie 1s linear infinite;
+  animation: idontwanttodie 3s linear infinite;
   &:hover {
     animation-play-state: paused;
     animation: shake 0.5s linear infinite;
@@ -77,32 +76,32 @@ h1 {
   margin-top: -50px;
   position: relative;
   z-index: 2;
-  font-size: 200px;
+  font-size: 150px;
 }
 .whatfor_wrap > h1 {
   color: white;
   display: inline-block;
   white-space: nowrap;
   font-family: 'QuinqueFive';
-  animation: whatfor 1.5s linear infinite;
+  animation: whatfor 3s linear infinite;
   &:hover {
     animation-play-state: paused;
     animation: shake 0.5s linear infinite;
   }
 }
 .whatididtodeserve_wrap {
-  transform: rotate(-15deg);
+  transform: rotate(-6deg);
   margin-top: -80px;
   position: relative;
   z-index: 1;
-  font-size: 200px;
+  font-size: 100px;
 }
 .whatididtodeserve_wrap > h1 {
   color: white;
   display: inline-block;
   white-space: nowrap;
   font-family: 'QuinqueFive';
-  animation: whatfor 1.5s linear infinite;
+  animation: whatididtodeserve 4s linear infinite;
   &:hover {
     animation-play-state: paused;
     animation: shake 0.5s linear infinite;
@@ -114,31 +113,29 @@ h1 {
   margin-top: -50px;
   position: relative;
   z-index: 1;
-  font-size: 100px;
+  font-size: 86px;
 }
 .why_wrap > h1 {
   color: white;
   display: inline-block;
   white-space: nowrap;
   font-family: 'QuinqueFive';
-
-  animation: whatfor 1.5s linear infinite;
+  animation: why 3s linear infinite;
   &:hover {
     animation-play-state: paused;
     animation: shake 0.5s linear infinite;
   }
 }
-
 .system_message {
   font-family: 'Press Start 2P';
   color: rgba(255, 0, 0, 0);
-  font-size: 25px;
+  font-size: 26px;
   background-color: black;
-  border: 1px solid white;
+  border: 2px solid white;
   z-index: 3;
   display: inline-block;
   position: relative;
-  margin-top: -150px;
+  padding: 20px 0;
   /* animation: message_dissapear 1s linear infinite; */
   animation: message_dissapear linear both;
   animation-timeline: view(45% 60%);
@@ -148,20 +145,17 @@ h1 {
   } */
 }
 .system_message:nth-of-type(odd) {
-  margin-left: 50px;
-  padding: 30px 300px 30px 60px;
+  margin-left: 2vw;
 }
 .system_message:nth-of-type(even) {
-  margin-right: 50px;
+  margin-right: 2vw;
   text-align: right;
   float: right;
-  padding: 30px 60px 30px 300px;
 }
-.system_message:before,
-.system_message_even:before {
+.system_message:before {
   content: ' ';
   position: absolute;
-  font-size: 25px;
+  font-size: 26px;
   color: white;
   white-space: pre-wrap;
   width: 80%;
@@ -215,13 +209,13 @@ h1 {
 }
 
 .ghost1 {
-  animation: ghost1 0.5s steps(21) infinite;
+  animation: ghost1 1s steps(21) infinite;
 }
 .ghost2 {
-  animation: ghost2 0.5s steps(21) infinite;
+  animation: ghost2 1s steps(21) infinite;
 }
 .ghost3 {
-  animation: ghost3 0.5s steps(21) infinite;
+  animation: ghost3 1s steps(21) infinite;
 }
 .ghost1,
 .ghost2,
@@ -247,57 +241,125 @@ h1 {
 .letters {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  overflow-x: clip;
 }
 .letters span {
-  border: blue 1px solid;
+  border: 1px solid blue;
   font-size: 265px;
   color: white;
+  width: 177px;
 }
 #l1 {
   font-family: 'Druzhok';
+  animation: l1 2s steps(1) infinite;
+  transform: rotate(-15deg);
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l2 {
   font-family: 'Rezok';
+  animation: l2 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l3 {
   font-family: 'Truin';
+  animation: l6 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l4 {
   font-family: 'Ghostsigns';
+  animation: l6 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l5 {
   font-family: 'ksms';
+  animation: l6 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l6 {
   font-family: 'Mrakobes';
+  animation: l6 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l7 {
   font-family: 'Atonic';
+  animation: l7 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l8 {
   font-family: 'VPCH2';
+  animation: l8 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l9 {
   font-family: 'Druzhok';
+  animation: l9 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l10 {
   font-family: 'ksms';
+  animation: l10 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l11 {
   font-family: 'Atonic';
+  animation: l11 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l12 {
   font-family: 'Druzhok';
+  animation: l12 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l13 {
   font-family: 'Rezok';
+  animation: l13 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l14 {
   font-family: 'ksms';
+  animation: l14 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l15 {
   font-family: 'Ghostsigns';
+  animation: l15 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }
 #l16 {
   font-family: 'Mrakobes';
+  animation: l16 2s steps(1) infinite;
+  &:hover {
+    animation: button 1s infinite linear;
+  }
 }

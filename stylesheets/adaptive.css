@@ -1,4 +1,21 @@
-@media all and (max-width: 1440px) {
+@media all and (min-width: 390px) {
+  .system_message {
+    margin-top: -6.8vw;
+    width: 46%;
+    max-width: 670px;
+    min-width: 414px;
+  }
+}
+@media all and (min-width: 1440px) {
+  .system_message {
+    margin-top: -100px;
+  }
+  .letters span {
+    font-size: 265px;
+  }
+}
+
+@media all and (max-width: 1440px) and (min-width: 390px) {
   .ghost_wrap {
     width: 34vw;
   }
@@ -8,28 +25,72 @@
   .ghost_wrap:nth-of-type(3) {
     margin-left: 0;
   }
+  .letters span {
+    font-size: calc(105px + 160 * ((100vw - 390px) / (1440 - 390)));
+    width: 12%;
+  }
 }
-@media all and (max-width: 390px) {
+@media all and (max-width: 1440px) {
   body {
     width: 100%;
-    border: none;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .iwanttokillthem_wrap {
+    font-size: calc(200px + 200 * ((100vw - 768px) / (1440 - 768)));
+  }
+  .ohmygod_wrap {
+    font-size: calc(150px + 150 * ((100vw - 768px) / (1440 - 768)));
+  }
+  .whatfor_wrap {
+    font-size: calc(75px + 75 * ((100vw - 768px) / (1440 - 768)));
+  }
+  .whatididtodeserve_wrap {
+    font-size: calc(50px + 50 * ((100vw - 768px) / (1440 - 768)));
+  }
+  .why_wrap {
+    font-size: calc(43px + 43 * ((100vw - 768px) / (1440 - 768)));
+  }
+  .system_message,
+  .system_message:before {
+    font-size: calc(15px + 11 * ((100vw - 768px) / (1440 - 768)));
+  }
+}
+@media all and (min-width: 414px) and (max-width: 1440px) {
+}
+
+@media all and (max-width: 768px) {
+  .iwanttokillthem_wrap {
+    font-size: 200px;
+  }
+  .ohmygod_wrap {
+    font-size: 150px;
+  }
+  .whatfor_wrap {
+    font-size: 75px;
+  }
+  .whatididtodeserve_wrap {
+    font-size: 50px;
+  }
+  .why_wrap {
+    font-size: 43px;
+  }
+  .system_message,
+  .system_message:before {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 414px) {
   .system_message {
     width: 100%;
     margin-top: 0;
-    font-size: 15px;
     animation-timeline: none;
   }
   .system_message:nth-of-type(odd) {
     margin-left: 0px;
-    padding: 20px 0px;
   }
   .system_message:nth-of-type(even) {
     margin-right: 0px;
-    padding: 20px 0px;
-  }
-  .system_message::before {
-    font-size: 15px;
   }
   .ghost_wrap:nth-of-type(1) {
     display: none;
@@ -40,22 +101,27 @@
   .ghost_wrap {
     width: 100%;
   }
-  .ohmygod_wrap {
-    font-size: 140px;
-  }
-  .whatfor_wrap {
-    font-size: 100px;
-  }
-  .whatididtodeserve_wrap {
-    font-size: 100px;
-  }
-  .idontwanttodie_wrap {
-    font-size: 30px;
-  }
   .iwanttokillthem_wrap {
     font-size: 200px;
   }
+  .whatididtodeserveit_wrap {
+    font-size: 70px;
+  }
+  .idontwanttodie {
+    font-size: 20px;
+  }
+  .whatfor_wrap {
+    font-size: 50px;
+  }
   .why_wrap {
     font-size: 50px;
+  }
+  .ohmygod_wrap {
+    font-size: 150px;
+  }
+}
+@media all and (max-width: 414px) {
+  .letters span {
+    font-size: 105px;
   }
 }

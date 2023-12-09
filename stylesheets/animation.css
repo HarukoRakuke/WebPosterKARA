@@ -26,35 +26,33 @@
 }
 
 @keyframes ohmygod {
-  0% {
-    transform: translate(0%);
-  }
   100% {
-    transform: translate(-80%);
+    transform: translate(-67%);
   }
 }
 @keyframes iwanttokillthem {
-  0% {
-    transform: translate(0%);
-  }
   100% {
-    transform: translate(-52.1%);
+    transform: translate(-84%);
+  }
+}
+@keyframes whatididtodeserve {
+  100% {
+    transform: translate(-64.8%);
   }
 }
 @keyframes idontwanttodie {
-  0% {
-    transform: translate(-100%);
-  }
   100% {
-    transform: translate(100%);
+    transform: translate(-72%);
+  }
+}
+@keyframes why {
+  100% {
+    transform: translate(-66%);
   }
 }
 @keyframes whatfor {
-  0% {
-    transform: translate(-100%);
-  }
   100% {
-    transform: translate(100%);
+    transform: translate(-80%);
   }
 }
 @keyframes first_glitch {
@@ -199,10 +197,10 @@
 }
 @keyframes body_shake {
   33% {
-    transform: translateX(-10px);
+    transform: translateX(-3px);
   }
   66% {
-    transform: translateX(10px);
+    transform: translateX(3px);
   }
 }
 @keyframes ghost1 {
@@ -233,5 +231,54 @@
   100% {
     background-color: black;
     color: white;
+  }
+}
+
+@keyframes l1 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Druzhok';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  27% {
+    font-family: 'Ghostsigns';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+  73% {
+    font-family: 'VPCH2';
+    color: white;
+  }
+}
+@keyframes l2 {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  5% {
+    color: white;
+    font-family: 'Rezok';
+  }
+  27% {
+    color: rgba(0, 0, 0, 0);
+  }
+  70% {
+    color: white;
+    font-family: 'VPCH2';
+  }
+  80% {
+    font-family: 'Boris';
+  }
+  94% {
+    color: white;
+  }
+  95% {
+    color: rgba(0, 0, 0, 0);
   }
 }
