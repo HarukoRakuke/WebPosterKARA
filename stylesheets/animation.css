@@ -265,9 +265,6 @@
     color: white;
     font-family: 'Rezok';
   }
-  27% {
-    color: rgba(0, 0, 0, 0);
-  }
   70% {
     color: white;
     font-family: 'VPCH2';
@@ -280,5 +277,351 @@
   }
   95% {
     color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l3 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Truin';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  27% {
+    font-family: 'Druzhok';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l4 {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  5% {
+    color: white;
+    font-family: 'Ghostsigns';
+  }
+  70% {
+    color: white;
+    font-family: 'VPCH2';
+  }
+  80% {
+    font-family: 'Truin';
+  }
+  95% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l5 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Atonic';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  27% {
+    font-family: 'ksms';
+    color: white;
+  }
+  50% {
+    font-family: 'Atonic';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l6 {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  5% {
+    color: white;
+    font-family: 'Mrabokes';
+  }
+  70% {
+    color: white;
+    font-family: 'Druzhok';
+  }
+  80% {
+    color: rgba(0, 0, 0, 0);
+  }
+  95% {
+    font-family: 'Druzhok';
+  }
+}
+@keyframes l7 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Atonic';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  27% {
+    font-family: 'Truin';
+    color: white;
+  }
+  50% {
+    font-family: 'ksms';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l8 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'VPCH2';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  27% {
+    font-family: 'Druzhok';
+    color: white;
+  }
+  50% {
+    font-family: 'Rezok';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l9 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Druzhok';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  27% {
+    font-family: 'Truin';
+    color: white;
+  }
+  50% {
+    font-family: 'VPCH2';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l10 {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  5% {
+    color: white;
+    font-family: 'ksms';
+  }
+  70% {
+    color: white;
+    font-family: 'Ghostsigns';
+  }
+  95% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l11 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Rezok';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    font-family: 'Truin';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l12 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Ghostsigns';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  27% {
+    font-family: 'Truin';
+    color: white;
+  }
+  50% {
+    font-family: 'Ghostsigns';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l13 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Rezok';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    font-family: 'Truin';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l14 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'VPCH2';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  27% {
+    font-family: 'ksms';
+    color: white;
+  }
+  50% {
+    font-family: 'VPCH2';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l15 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Atonic';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    font-family: 'mrakobes';
+    color: white;
+  }
+  70% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes l16 {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  17% {
+    font-family: 'Mrakobes';
+    color: white;
+  }
+  26% {
+    color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    font-family: 'Boris';
+    color: white;
+  }
+}
+@keyframes run {
+  100% {
+    transform: translate(-215%);
+  }
+}
+@keyframes p {
+  0% {
+    background-position: 0 -600%;
+  }
+  100% {
+    background-position: -100% -600%;
+  }
+}
+@keyframes o {
+  0% {
+    background-position: 0 -500%;
+  }
+  100% {
+    background-position: -100% -500%;
+  }
+}
+@keyframes m {
+  0% {
+    background-position: 0 -400%;
+  }
+  100% {
+    background-position: -100% -400%;
+  }
+}
+
+@keyframes g {
+  0% {
+    background-position: 0 -300%;
+  }
+  100% {
+    background-position: -100% -300%;
+  }
+}
+@keyframes i {
+  0% {
+    background-position: 0 -200%;
+  }
+  100% {
+    background-position: -100% -200%;
+  }
+}
+@keyframes t {
+  0% {
+    background-position: 0 -100%;
+  }
+  100% {
+    background-position: -100% -100%;
+  }
+}
+@keyframes e {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
   }
 }

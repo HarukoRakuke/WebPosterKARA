@@ -27,12 +27,12 @@
   }
   .letters span {
     font-size: calc(105px + 160 * ((100vw - 390px) / (1440 - 390)));
-    width: 12%;
   }
 }
 @media all and (max-width: 1440px) {
   body {
     width: 100%;
+    border: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1440px) {
@@ -92,14 +92,28 @@
   .system_message:nth-of-type(even) {
     margin-right: 0px;
   }
-  .ghost_wrap:nth-of-type(1) {
+  /* .ghost_wrap:nth-of-type(1) {
     display: none;
   }
   .ghost_wrap:nth-of-type(3) {
     display: none;
+  } */
+  .ghosts_container {
+    flex-wrap: wrap;
   }
-  .ghost_wrap {
+  .ghost_wrap:nth-of-type(1),
+  .ghost_wrap:nth-of-type(3) {
+    width: 50%;
+  }
+  .ghost_wrap:nth-of-type(1) {
+    order: 2;
+  }
+  .ghost_wrap:nth-of-type(3) {
+    order: 3;
+  }
+  .ghost_wrap:nth-of-type(2) {
     width: 100%;
+    order: 1;
   }
   .iwanttokillthem_wrap {
     font-size: 200px;

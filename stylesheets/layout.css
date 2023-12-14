@@ -13,7 +13,8 @@ section {
   position: relative;
   width: 100%;
 }
-section:nth-of-type(1) {
+section:nth-of-type(1),
+section:nth-of-type(4) {
   overflow-x: clip;
 }
 
@@ -137,8 +138,8 @@ h1 {
   position: relative;
   padding: 20px 0;
   /* animation: message_dissapear 1s linear infinite; */
-  animation: message_dissapear linear both;
-  animation-timeline: view(45% 60%);
+  /* animation: message_dissapear linear both;
+  animation-timeline: view(45% 60%); */
   /* &:hover {
     animation-play-state: paused;
     animation: message_stable 1s linear infinite;
@@ -244,122 +245,193 @@ h1 {
   width: 100%;
   overflow-x: clip;
 }
-.letters span {
-  border: 1px solid blue;
+.letters > span {
   font-size: 265px;
   color: white;
-  width: 177px;
+}
+#l1,
+#l2,
+#l3,
+#l4,
+#l5,
+#l6,
+#l7,
+#l8,
+#l9,
+#l10,
+#l11,
+#l12,
+#l13,
+#l14,
+#l15,
+#l16 {
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 #l1 {
-  font-family: 'Druzhok';
-  animation: l1 2s steps(1) infinite;
+  font-family: 'Ghostsigns';
   transform: rotate(-15deg);
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  width: 0.98em;
+  animation: l1 1.5s steps(1) infinite;
+  margin-top: 0.25em;
 }
 #l2 {
-  font-family: 'Rezok';
-  animation: l2 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  font-family: 'Boris';
+  width: 0.85em;
+  margin-top: 0.35em;
+  animation: l2 1.5s steps(1) infinite;
+  animation-delay: 1.3s;
 }
 #l3 {
   font-family: 'Truin';
-  animation: l6 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  width: 0.55em;
+  animation: l3 1.5s steps(1) infinite;
+  animation-delay: -0.3s;
+  margin-top: 0.25em;
 }
 #l4 {
   font-family: 'Ghostsigns';
-  animation: l6 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  margin-top: 0.4em;
+  width: 0.28em;
+  animation: l4 1.5s steps(1) infinite;
+  animation-delay: -0.5s;
 }
 #l5 {
   font-family: 'ksms';
-  animation: l6 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l5 1.5s steps(1) infinite;
+  width: 0.58em;
+  animation-delay: -1.2s;
+  margin-top: -0.15em;
 }
 #l6 {
   font-family: 'Mrakobes';
-  animation: l6 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l6 1.5s steps(1) infinite;
+  margin-top: 0.45em;
+  width: 0.18em;
+  animation-delay: 0.1s;
 }
 #l7 {
   font-family: 'Atonic';
-  animation: l7 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l7 1.5s steps(1) infinite;
+  width: 0.65em;
+  margin-top: 0.25em;
+  animation-delay: 0.8s;
 }
 #l8 {
   font-family: 'VPCH2';
-  animation: l8 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l8 1.5s steps(1) infinite;
+  transform: rotate(-15deg);
+  width: 0.55em;
+  margin-top: 0.25em;
+  animation-delay: -0.8s;
 }
 #l9 {
   font-family: 'Druzhok';
-  animation: l9 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l9 1.5s steps(1) infinite;
+  width: 0.55em;
+  animation-delay: -1.2s;
 }
 #l10 {
   font-family: 'ksms';
-  animation: l10 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l10 1.5s steps(1) infinite;
+  transform: rotate(-15deg);
+  width: 0.58em;
+  animation-delay: -0.7s;
 }
 #l11 {
   font-family: 'Atonic';
-  animation: l11 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  width: 0.85em;
+  animation: l11 1.5s steps(1) infinite;
+  animation-delay: -1.6s;
 }
 #l12 {
   font-family: 'Druzhok';
-  animation: l12 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l12 1.5s steps(1) infinite;
+  transform: rotate(-15deg);
+  margin-top: 0.25em;
+  width: 0.68em;
+  animation-delay: 0.6s;
 }
 #l13 {
   font-family: 'Rezok';
-  animation: l13 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l13 1.5s steps(1) infinite;
+  transform: rotate(15deg);
+  width: 0.95em;
+  animation-delay: 0.4s;
 }
 #l14 {
   font-family: 'ksms';
-  animation: l14 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l14 1.5s steps(1) infinite;
+  width: 0.48em;
+  animation-delay: 0.2s;
 }
 #l15 {
   font-family: 'Ghostsigns';
-  animation: l15 2s steps(1) infinite;
-  &:hover {
-    animation: button 1s infinite linear;
-  }
+  animation: l15 1.5s steps(1) infinite;
+  transform: rotate(15deg);
+  width: 0.88em;
+  margin-top: 0.35em;
+  line-height: 0.55em;
+  animation-delay: 0.9s;
 }
 #l16 {
-  font-family: 'Mrakobes';
   animation: l16 2s steps(1) infinite;
+  font-family: 'Mrakobes';
+  width: 0.98em;
+  transform: rotate(-15deg);
+  margin-top: 0.55em;
+  line-height: 0.55em;
+  animation-delay: -1.1s;
+}
+.letter_wrap {
+  margin-left: -50px;
+}
+.p,
+.o,
+.m,
+.g,
+.i,
+.t,
+.e {
+  background-image: url(../images/message_2.png);
+  width: 440px;
+  background-size: auto 700%;
+  height: 342px;
+  /* ' line-height: 560px;
+  font-family: 'Press_Start_2P';
+  font-size: 450px;
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: rgba(0, 0, 0, 0);' */
   &:hover {
-    animation: button 1s infinite linear;
+    animation-play-state: paused;
   }
+}
+.p {
+  animation: p 1s infinite steps(22);
+}
+.o {
+  animation: o 1s infinite steps(22);
+}
+.m {
+  animation: m 1s infinite steps(22);
+}
+.g {
+  animation: g 1s infinite steps(22);
+}
+.i {
+  animation: i 1s infinite steps(22);
+}
+.t {
+  animation: t 1s infinite steps(22);
+}
+.e {
+  animation: e 1s infinite steps(22);
+}
+.helpme {
+  display: flex;
+  animation: run 7s infinite linear;
 }
