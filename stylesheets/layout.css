@@ -456,9 +456,9 @@ h1 {
   font-family: 'Helvetica';
   border: 1px solid white;
   width: 650px;
-  padding: 20px;
   line-height: 60px;
   text-align: justify;
+  padding: 20px;
   text-justify: inter-word;
   position: relative;
   margin-left: 120px;
@@ -466,6 +466,7 @@ h1 {
 .first_app span {
   background-color: white;
   color: black;
-  width: 50px;
-  height: 50px;
+}
+.first_app span:nth-of-type(1) {
+  box-shadow: -20px 0px 0px white;
 }
