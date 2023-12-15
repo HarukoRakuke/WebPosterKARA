@@ -42,3 +42,7 @@
   font-family: 'VPCH2'; /* название шрифта */
   src: url(../fonts/VPCH2.otf); /* ссылка на файл */
 }
+@font-face {
+  font-family: 'Helvetica'; /* название шрифта */
+  src: url(../fonts/helvetica_bold.otf); /* ссылка на файл */
+}

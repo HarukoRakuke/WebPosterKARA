@@ -147,11 +147,13 @@ h1 {
 }
 .system_message:nth-of-type(odd) {
   margin-left: 2vw;
+  padding-left: 1.5em;
 }
 .system_message:nth-of-type(even) {
   margin-right: 2vw;
   text-align: right;
   float: right;
+  padding-right: 1.5em;
 }
 .system_message:before {
   content: ' ';
@@ -162,15 +164,23 @@ h1 {
   width: 80%;
 }
 .system_message:nth-of-type(even):before {
-  animation: second_glitch 2.5s linear infinite;
   text-align: right;
-  right: 60px;
+  right: 1.5em;
 }
 .system_message:nth-of-type(odd):before {
   animation: first_glitch 2.5s linear infinite;
-  left: 60px;
+  left: 1.5em;
 }
-.system_message:afterafter {
+.system_message:nth-of-type(1):before {
+  animation: first_glitch 2.5s linear infinite;
+}
+.system_message:nth-of-type(2):before {
+  animation: second_glitch 2.5s linear infinite;
+}
+.system_message:nth-of-type(3):before {
+  animation: third_glitch 2.5s linear infinite;
+}
+.system_message:after {
   content: 'X';
   position: absolute;
   font-size: 70px;
@@ -434,4 +444,28 @@ h1 {
 .helpme {
   display: flex;
   animation: run 7s infinite linear;
+}
+.messages {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+}
+.first_app {
+  font-size: 50px;
+  color: white;
+  font-family: 'Helvetica';
+  border: 1px solid white;
+  width: 650px;
+  padding: 20px;
+  line-height: 60px;
+  text-align: justify;
+  text-justify: inter-word;
+  position: relative;
+  margin-left: 120px;
+}
+.first_app span {
+  background-color: white;
+  color: black;
+  width: 50px;
+  height: 50px;
 }
