@@ -690,3 +690,14 @@
     background-position: -100% 0;
   }
 }
+@keyframes error {
+  0% {
+    line-height: 1em;
+  }
+  50% {
+    line-height: 7.2em;
+  }
+  100% {
+    line-height: 1em;
+  }
+}
