@@ -134,9 +134,10 @@ h1 {
   background-color: black;
   border: 2px solid white;
   z-index: 3;
-  display: inline-block;
+  display: block;
   position: relative;
   padding: 20px 0;
+  box-sizing: border-box;
   /* animation: message_dissapear 1s linear infinite; */
   /* animation: message_dissapear linear both;
   animation-timeline: view(45% 60%); */
@@ -145,15 +146,19 @@ h1 {
     animation: message_stable 1s linear infinite;
   } */
 }
-.system_message:nth-of-type(odd) {
-  margin-left: 2vw;
+.message_wrap:nth-of-type(odd) .system_message {
   padding-left: 1.5em;
 }
-.system_message:nth-of-type(even) {
-  margin-right: 2vw;
-  text-align: right;
-  float: right;
+.message_wrap:nth-of-type(even) .system_message {
+  margin-left: auto;
   padding-right: 1.5em;
+  text-align: right;
+}
+.message_wrap:nth-of-type(odd) {
+  margin-left: 40px;
+}
+.message_wrap:nth-of-type(even) {
+  margin-right: 40px;
 }
 .system_message:before {
   content: ' ';
@@ -163,40 +168,44 @@ h1 {
   white-space: pre-wrap;
   width: 80%;
 }
-.system_message:nth-of-type(even):before {
+.message_wrap:nth-of-type(even) .system_message:before {
   text-align: right;
   right: 1.5em;
 }
-.system_message:nth-of-type(odd):before {
-  animation: first_glitch 2.5s linear infinite;
+.message_wrap:nth-of-type(odd) .system_message:before {
   left: 1.5em;
 }
-.system_message:nth-of-type(1):before {
+.message_wrap:nth-of-type(1) .system_message:before {
   animation: first_glitch 2.5s linear infinite;
 }
-.system_message:nth-of-type(2):before {
+.message_wrap:nth-of-type(2) .system_message:before {
   animation: second_glitch 2.5s linear infinite;
 }
-.system_message:nth-of-type(3):before {
+.message_wrap:nth-of-type(3) .system_message:before {
   animation: third_glitch 2.5s linear infinite;
 }
-.system_message:after {
-  content: 'X';
+.message_wrap {
+  position: relative;
+  font-size: 26px;
+  box-sizing: border-box;
+}
+.message_wrap span {
   position: absolute;
-  font-size: 70px;
+  font-size: 2.5em;
   color: white;
-  font-size: 'Press Start 2P';
-  top: -40px;
-  text-shadow: 10px 10px black;
-  -webkit-text-stroke: 2px black;
-}
-.system_message:nth-of-type(odd):after {
-  left: -30px;
-}
-.system_message_even:nth-of-type(even):after {
-  right: -30px;
+  font-family: 'Press Start 2P';
+  z-index: 4;
+  width: 0;
+  text-shadow: 5px 5px black;
+  -webkit-text-stroke: 1px black;
+  &:active {
+    opacity: 0;
+  }
 }
 
+.message_wrap span:active ~ .system_message {
+  opacity: 0;
+}
 .ghosts_container {
   display: flex;
   flex-direction: row;
@@ -246,7 +255,7 @@ h1 {
   position: relative;
   z-index: 2;
   &:hover {
-    animation: button 0.1s linear infinite;
+    animation: go_black 0.1s linear infinite;
   }
 }
 .letters {
@@ -281,7 +290,7 @@ h1 {
 }
 #l1 {
   font-family: 'Ghostsigns';
-  transform: rotate(-15deg);
+  /* transform: rotate(-15deg); */
   width: 0.98em;
   animation: l1 1.5s steps(1) infinite;
   margin-top: 0.25em;
@@ -345,7 +354,7 @@ h1 {
 #l10 {
   font-family: 'ksms';
   animation: l10 1.5s steps(1) infinite;
-  transform: rotate(-15deg);
+  /* transform: rotate(-15deg); */
   width: 0.58em;
   animation-delay: -0.7s;
 }
@@ -447,26 +456,49 @@ h1 {
 }
 .messages {
   display: flex;
-  padding: 20px;
   width: 100%;
+  margin-top: 20px;
 }
 .first_app {
   font-size: 50px;
   color: white;
   font-family: 'Helvetica';
   border: 1px solid white;
-  width: 650px;
-  line-height: 60px;
+  width: 13em;
+  line-height: 1.2em;
   text-align: justify;
-  padding: 20px;
+  padding: 0.4em;
   text-justify: inter-word;
   position: relative;
-  margin-left: 120px;
+  margin-left: 1em;
+  animation: background_blink 2.7s steps(1) infinite;
+  animation-delay: 0.3s;
+  &:hover::after {
+    content: '!!!';
+    font-size: 10em;
+    line-height: 0.5em;
+    text-align: center;
+    vertical-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
 }
-.first_app span {
-  background-color: white;
-  color: black;
+.first_app span:nth-of-type(odd) {
+  animation: blink_white 1s steps(1) infinite;
 }
-.first_app span:nth-of-type(1) {
-  box-shadow: -20px 0px 0px white;
+.first_app span:nth-of-type(even) {
+  animation: blink_white 1s steps(1) infinite;
+  animation-delay: 0.5s;
+}
+.first_app span:nth-of-type(7) {
+  animation: help_span 2.7s steps(1) infinite;
+  animation-delay: 0.3s;
+}
+.first_app span:nth-of-type(7) > span:nth-of-type(2) {
+  color: white;
 }

@@ -1,17 +1,27 @@
-@media all and (min-width: 390px) {
+@media all and (min-width: 360px) {
   .system_message {
-    margin-top: -6.8vw;
-    width: 46%;
+    width: 55%;
     max-width: 670px;
-    min-width: 414px;
+    min-width: 360px;
+  }
+  .message_wrap {
+    margin-top: -6.8vw;
   }
 }
 @media all and (min-width: 1440px) {
-  .system_message {
+  .message_wrap {
     margin-top: -100px;
   }
   .letters span {
     font-size: 265px;
+  }
+  .message_wrap:nth-of-type(odd) span {
+    left: -30px;
+    top: -30px;
+  }
+  .message_wrap:nth-of-type(even) span {
+    right: 30px;
+    top: -30px;
   }
 }
 
@@ -27,6 +37,9 @@
   }
   .letters span {
     font-size: calc(105px + 160 * ((100vw - 390px) / (1440 - 390)));
+  }
+  .first_app {
+    font-size: calc(24px + 26 * ((100vw - 390px) / (1440 - 390)));
   }
 }
 @media all and (max-width: 1440px) {
@@ -52,11 +65,26 @@
     font-size: calc(43px + 43 * ((100vw - 768px) / (1440 - 768)));
   }
   .system_message,
-  .system_message:before {
+  .system_message:before,
+  .message_wrap {
     font-size: calc(15px + 11 * ((100vw - 768px) / (1440 - 768)));
   }
 }
 @media all and (min-width: 414px) and (max-width: 1440px) {
+  .message_wrap:nth-of-type(odd) {
+    margin-left: 3vw;
+  }
+  .message_wrap:nth-of-type(even) {
+    margin-right: 3vw;
+  }
+  .message_wrap:nth-of-type(odd) span {
+    left: -0.35em;
+    top: -0.35em;
+  }
+  .message_wrap:nth-of-type(even) span {
+    right: 0.35em;
+    top: -0.35em;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -76,21 +104,32 @@
     font-size: 43px;
   }
   .system_message,
-  .system_message:before {
+  .system_message:before,
+  .message_wrap {
     font-size: 15px;
   }
 }
 @media all and (max-width: 414px) {
   .system_message {
     width: 100%;
-    margin-top: 0;
     animation-timeline: none;
   }
-  .system_message:nth-of-type(odd) {
+  .message_wrap {
+    margin-top: 0;
+  }
+  .message_wrap:nth-of-type(odd) {
     margin-left: 0px;
   }
-  .system_message:nth-of-type(even) {
+  .message_wrap:nth-of-type(even) {
     margin-right: 0px;
+  }
+  .message_wrap:nth-of-type(odd) span {
+    right: 1.5em;
+    top: -0.35em;
+  }
+  .message_wrap:nth-of-type(even) span {
+    left: 0.5em;
+    top: -0.35em;
   }
   /* .ghost_wrap:nth-of-type(1) {
     display: none;
@@ -133,9 +172,10 @@
   .ohmygod_wrap {
     font-size: 150px;
   }
-}
-@media all and (max-width: 414px) {
   .letters span {
     font-size: 105px;
+  }
+  .first_app {
+    font-size: 24px;
   }
 }

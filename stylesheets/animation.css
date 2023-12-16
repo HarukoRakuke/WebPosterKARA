@@ -214,48 +214,7 @@
     content: '>> СИСТЕМА:\00000a\00000aКАРА.РАСПОЗНАТЬ.\00000aЖЕРТВА';
   }
 }
-@keyframes message_dissapear {
-  /* 20% {
-    visibility: hidden;
-  }
-  37% {
-    visibility: hidden;
-  }
-  40% {
-    visibility: visible;
-  }
-  50% {
-    visibility: hidden;
-  }
-  67% {
-    visibility: hidden;
-  }
-  81% {
-    visibility: visible;
-  } */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes message_stable {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: visible;
-  }
-}
-@keyframes body_shake {
-  33% {
-    transform: translateX(-3px);
-  }
-  66% {
-    transform: translateX(3px);
-  }
-}
+
 @keyframes ghost1 {
   0% {
     background-position: 0 0;
@@ -280,13 +239,66 @@
     background-position: -100% -100%;
   }
 }
-@keyframes button {
+@keyframes go_black {
+  0% {
+    background-color: white;
+    color: black;
+  }
   100% {
     background-color: black;
     color: white;
   }
 }
-
+@keyframes go_white {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+@keyframes blink_white {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes background_blink {
+  0% {
+    background-color: black;
+    color: white;
+  }
+  50% {
+    background-color: white;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
+@keyframes help_span {
+  0% {
+    background-color: black;
+    color: white;
+  }
+  20% {
+    background-color: white;
+    color: black;
+    box-shadow: -0.4em 0px 0px white, 0.9em 0px 0px white;
+  }
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
 @keyframes l1 {
   1% {
     color: rgba(0, 0, 0, 0);
