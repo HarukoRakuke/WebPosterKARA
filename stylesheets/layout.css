@@ -8,6 +8,7 @@ body {
   border-left: 1px white solid;
   border-right: 1px white solid;
   position: relative;
+  font-family: sans-serif;
 }
 section {
   position: relative;
@@ -202,7 +203,6 @@ h1 {
     opacity: 0;
   }
 }
-
 .message_wrap span:active ~ .system_message {
   opacity: 0;
 }
@@ -471,7 +471,7 @@ h1 {
   text-justify: inter-word;
   position: relative;
   margin-left: 1em;
-  animation: background_blink 2.7s steps(1) infinite;
+  animation: background_blink 1s steps(1) infinite;
   animation-delay: 0.3s;
   &:hover::after {
     content: 'ОШИБКА';
@@ -485,23 +485,29 @@ h1 {
     height: 100%;
     color: white;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     background-color: black;
     animation: error 1s linear infinite;
   }
 }
-.first_app span:nth-of-type(odd) {
+/* .first_app span:nth-of-type(odd) {
   animation: blink_white 1s steps(1) infinite;
 }
 .first_app span:nth-of-type(even) {
   animation: blink_white 1s steps(1) infinite;
   animation-delay: 0.5s;
+} */
+.first_app span {
+  animation: blink_white 1.3s steps(1) infinite;
+  animation-delay: calc(var(--i) * -0.2s);
 }
-.first_app span:nth-of-type(7) {
-  animation: help_span 2.7s steps(1) infinite;
-  animation-delay: 0.3s;
+.first_app .box {
+  animation: box steps(1) infinite;
+  animation-delay: calc(var(--i) * -0.2s);
+  animation-duration: calc(var(--i) * 1s);
 }
-.first_app span:nth-of-type(7) > span:nth-of-type(2) {
-  color: white;
+.first_app .big_box {
+  animation: big_box 2s steps(1) infinite;
+  animation-delay: calc(var(--i) * -0.2s);
 }

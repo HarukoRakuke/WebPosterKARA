@@ -284,12 +284,17 @@
     color: white;
   }
 }
-@keyframes help_span {
-  0% {
+@keyframes box {
+  0%,
+  30%,
+  50% {
     background-color: black;
     color: white;
+    box-shadow: -0.4em 0px 0px black, 0.9em 0px 0px black;
   }
-  20% {
+  25%,
+  40%,
+  65% {
     background-color: white;
     color: black;
     box-shadow: -0.4em 0px 0px white, 0.9em 0px 0px white;
@@ -297,8 +302,35 @@
   100% {
     background-color: black;
     color: white;
+    box-shadow: -0.4em 0px 0px black, 0.9em 0px 0px black;
   }
 }
+@keyframes big_box {
+  0%,
+  30%,
+  50% {
+    background-color: white;
+    color: white;
+    box-shadow: -0.4em 0px 0px white, 0.9em 0px 0px white;
+  }
+  25%,
+  65% {
+    background-color: black;
+    color: black;
+    box-shadow: -0.4em 0px 0px black, 0.9em 0px 0px black;
+  }
+  40% {
+    background-color: black;
+    color: white;
+    box-shadow: -0.4em 0px 0px black, 0.9em 0px 0px black;
+  }
+  100% {
+    background-color: white;
+    color: white;
+    box-shadow: -0.4em 0px 0px white, 0.9em 0px 0px black;
+  }
+}
+
 @keyframes l1 {
   1% {
     color: rgba(0, 0, 0, 0);
