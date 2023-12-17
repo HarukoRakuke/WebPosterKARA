@@ -13,120 +13,82 @@ body {
 section {
   position: relative;
   width: 100%;
+  overflow-x: hidden;
 }
-section:nth-of-type(1),
-section:nth-of-type(4) {
-  overflow-x: clip;
+section:nth-of-type(1) {
+  overflow-y: hidden;
+}
+.scroll div {
+  font-family: 'QuinqueFive';
+  color: white;
+  -webkit-text-stroke: 1px black;
 }
 
-h1 {
-  -webkit-text-stroke: 0.5px black;
+.scroll {
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  position: relative;
 }
-.ohmygod_wrap {
+section .scroll div {
+  white-space: nowrap;
+  animation: animate 8s linear infinite;
+  animation-delay: -8s;
+}
+section .scroll div:nth-child(2) {
+  animation: animate2 8s linear infinite;
+  animation-delay: -4s;
+}
+.scream1 {
+  font-size: 300px;
   transform: rotate(-13deg);
   margin-top: -100px;
-  font-size: 300px;
 }
-.ohmygod_wrap > h1 {
-  color: white;
-  display: inline-block;
-  white-space: nowrap;
-  font-family: 'QuinqueFive';
-  position: relative;
-  animation: ohmygod 2s linear reverse infinite;
-  &:hover {
-    animation-play-state: paused;
-    animation: shake 0.5s linear infinite;
-  }
-}
-
-.iwanttokillthem_wrap > h1 {
-  color: white;
-  display: inline-block;
-  white-space: nowrap;
-  font-family: 'QuinqueFive';
-  animation: iwanttokillthem 6s linear infinite;
-  &:hover {
-    animation-play-state: paused;
-    animation: shake 0.5s linear infinite;
-  }
-}
-.iwanttokillthem_wrap {
-  font-size: 400px;
-  position: relative;
-}
-.idontwanttodie_wrap {
-  transform: rotate(25deg);
-  margin-top: -50px;
-  position: relative;
-  z-index: 2;
-  font-size: 60px;
-}
-.idontwanttodie_wrap > h1 {
-  color: white;
-  display: inline-block;
-  white-space: nowrap;
-  font-family: 'QuinqueFive';
-  animation: idontwanttodie 3s linear infinite;
-  &:hover {
-    animation-play-state: paused;
-    animation: shake 0.5s linear infinite;
-  }
-}
-.whatfor_wrap {
+.scream2 {
+  font-size: 100px;
   transform: rotate(10deg);
   margin-top: -50px;
-  position: relative;
-  z-index: 2;
-  font-size: 150px;
 }
-.whatfor_wrap > h1 {
-  color: white;
-  display: inline-block;
-  white-space: nowrap;
-  font-family: 'QuinqueFive';
-  animation: whatfor 3s linear infinite;
-  &:hover {
-    animation-play-state: paused;
-    animation: shake 0.5s linear infinite;
-  }
+.scream3 {
+  font-size: 60px;
+  transform: rotate(25deg);
+  margin-top: -50px;
+  z-index: 3;
 }
-.whatididtodeserve_wrap {
+.scream4 {
+  font-size: 100px;
   transform: rotate(-6deg);
   margin-top: -80px;
-  position: relative;
   z-index: 1;
-  font-size: 100px;
 }
-.whatididtodeserve_wrap > h1 {
-  color: white;
-  display: inline-block;
-  white-space: nowrap;
-  font-family: 'QuinqueFive';
-  animation: whatididtodeserve 4s linear infinite;
-  &:hover {
-    animation-play-state: paused;
-    animation: shake 0.5s linear infinite;
-  }
+.scream5 {
+  font-size: 400px;
 }
-
-.why_wrap {
+.scream6 {
+  font-size: 86px;
   transform: rotate(5deg);
   margin-top: -50px;
-  position: relative;
   z-index: 1;
-  font-size: 86px;
 }
-.why_wrap > h1 {
-  color: white;
-  display: inline-block;
-  white-space: nowrap;
-  font-family: 'QuinqueFive';
-  animation: why 3s linear infinite;
-  &:hover {
-    animation-play-state: paused;
-    animation: shake 0.5s linear infinite;
-  }
+.line1:hover {
+  animation-play-state: paused;
+  animation: shake 0.5s linear infinite;
+  animation-delay: 0s;
+}
+.line1:hover ~ .line2 {
+  animation-play-state: paused;
+  animation: shake 0.5s linear infinite;
+  animation-delay: 0s;
+}
+.line2:hover {
+  animation-play-state: paused;
+  animation: shake 0.5s linear infinite;
+  animation-delay: 0s;
+}
+.line2:hover ~ .line1 {
+  animation-play-state: paused;
+  animation: shake 0.5s linear infinite;
+  animation-delay: 0s;
 }
 .system_message {
   font-family: 'Press Start 2P';

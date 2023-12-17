@@ -49,19 +49,20 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1440px) {
-  .iwanttokillthem_wrap {
+  .scream5 {
     font-size: calc(200px + 200 * ((100vw - 768px) / (1440 - 768)));
   }
-  .ohmygod_wrap {
+  .scream1 {
     font-size: calc(150px + 150 * ((100vw - 768px) / (1440 - 768)));
   }
-  .whatfor_wrap {
+  .scream4,
+  .scream2 {
     font-size: calc(75px + 75 * ((100vw - 768px) / (1440 - 768)));
   }
-  .whatididtodeserve_wrap {
+  .scream3 {
     font-size: calc(50px + 50 * ((100vw - 768px) / (1440 - 768)));
   }
-  .why_wrap {
+  .scream6 {
     font-size: calc(43px + 43 * ((100vw - 768px) / (1440 - 768)));
   }
   .system_message,
@@ -88,19 +89,20 @@
 }
 
 @media all and (max-width: 768px) {
-  .iwanttokillthem_wrap {
+  .scream5 {
     font-size: 200px;
   }
-  .ohmygod_wrap {
+  .scream1 {
     font-size: 150px;
   }
-  .whatfor_wrap {
+  .scream2,
+  .scream4 {
     font-size: 75px;
   }
-  .whatididtodeserve_wrap {
+  .scream3 {
     font-size: 50px;
   }
-  .why_wrap {
+  .scream6 {
     font-size: 43px;
   }
   .system_message,

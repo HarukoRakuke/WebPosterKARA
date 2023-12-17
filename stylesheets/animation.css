@@ -25,34 +25,20 @@
   }
 }
 
-@keyframes ohmygod {
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
   100% {
-    transform: translate(-67%);
+    transform: translateX(-100%);
   }
 }
-@keyframes iwanttokillthem {
-  100% {
-    transform: translate(-84%);
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
   }
-}
-@keyframes whatididtodeserve {
   100% {
-    transform: translate(-64.8%);
-  }
-}
-@keyframes idontwanttodie {
-  100% {
-    transform: translate(-72%);
-  }
-}
-@keyframes why {
-  100% {
-    transform: translate(-66%);
-  }
-}
-@keyframes whatfor {
-  100% {
-    transform: translate(-80%);
+    transform: translateX(-200%);
   }
 }
 @keyframes third_glitch {
