@@ -491,13 +491,6 @@ h1 {
     animation: error 1s linear infinite;
   }
 }
-/* .first_app span:nth-of-type(odd) {
-  animation: blink_white 1s steps(1) infinite;
-}
-.first_app span:nth-of-type(even) {
-  animation: blink_white 1s steps(1) infinite;
-  animation-delay: 0.5s;
-} */
 .first_app span {
   animation: blink_white 1.3s steps(1) infinite;
   animation-delay: calc(var(--i) * -0.2s);
