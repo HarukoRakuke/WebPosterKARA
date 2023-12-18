@@ -25,7 +25,7 @@
   }
 }
 
-@media all and (max-width: 1440px) and (min-width: 390px) {
+@media all and (max-width: 1440px) and (min-width: 360px) {
   .ghost_wrap {
     width: 34vw;
   }
@@ -36,10 +36,21 @@
     margin-left: 0;
   }
   .letters span {
-    font-size: calc(105px + 160 * ((100vw - 390px) / (1440 - 390)));
+    font-size: calc(105px + 160 * ((100vw - 360px) / (1440 - 360)));
   }
-  .first_app {
-    font-size: calc(24px + 26 * ((100vw - 390px) / (1440 - 390)));
+  .second_app {
+    font-size: calc(32px + 18 * ((100vw - 360px) / (1440 - 360)));
+  }
+  .forth_app,
+  .first_app,
+  .third_app {
+    font-size: calc(24px + 36 * ((100vw - 360px) / (1440 - 360)));
+  }
+  .info {
+    font-size: calc(10px + 15 * ((100vw - 360px) / (1440 - 360)));
+  }
+  .name {
+    font-size: calc(15px + 10 * ((100vw - 360px) / (1440 - 360)));
   }
 }
 @media all and (max-width: 1440px) {
@@ -49,20 +60,19 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1440px) {
-  .scream5 {
+  .iwanttokillthem_wrap {
     font-size: calc(200px + 200 * ((100vw - 768px) / (1440 - 768)));
   }
-  .scream1 {
+  .ohmygod_wrap {
     font-size: calc(150px + 150 * ((100vw - 768px) / (1440 - 768)));
   }
-  .scream4,
-  .scream2 {
+  .whatfor_wrap {
     font-size: calc(75px + 75 * ((100vw - 768px) / (1440 - 768)));
   }
-  .scream3 {
+  .whatididtodeserve_wrap {
     font-size: calc(50px + 50 * ((100vw - 768px) / (1440 - 768)));
   }
-  .scream6 {
+  .why_wrap {
     font-size: calc(43px + 43 * ((100vw - 768px) / (1440 - 768)));
   }
   .system_message,
@@ -89,26 +99,38 @@
 }
 
 @media all and (max-width: 768px) {
-  .scream5 {
+  .iwanttokillthem_wrap {
     font-size: 200px;
   }
-  .scream1 {
+  .ohmygod_wrap {
     font-size: 150px;
   }
-  .scream2,
-  .scream4 {
+  .whatfor_wrap {
     font-size: 75px;
   }
-  .scream3 {
+  .whatididtodeserve_wrap {
     font-size: 50px;
   }
-  .scream6 {
+  .why_wrap {
     font-size: 43px;
   }
   .system_message,
   .system_message:before,
   .message_wrap {
     font-size: 15px;
+  }
+  .forth_app {
+    display: none;
+  }
+  .info {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-items: stretch;
+    width: 70%;
+  }
+  .name {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 @media all and (max-width: 414px) {
@@ -177,7 +199,34 @@
   .letters span {
     font-size: 105px;
   }
-  .first_app {
+  .messages {
+    flex-direction: column;
+  }
+  .first_app,
+  .second_app,
+  .third_app,
+  .forth_app {
     font-size: 24px;
+    margin-left: 0;
+  }
+  .third_app {
+    margin-top: 1em;
+  }
+  .second_app {
+    font-size: 32px;
+  }
+  .second_app,
+  .forth_app {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 1em;
+  }
+}
+@media all and (max-width: 360px) {
+  .info {
+    font-size: 10px;
+  }
+  .name {
+    font-size: 15px;
   }
 }

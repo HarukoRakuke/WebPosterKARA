@@ -3,13 +3,13 @@ html {
 }
 body {
   width: 1440px;
-  height: 4000px;
   margin: 0 auto;
   border-left: 1px white solid;
   border-right: 1px white solid;
   position: relative;
   font-family: sans-serif;
 }
+
 section {
   position: relative;
   width: 100%;
@@ -18,77 +18,114 @@ section {
 section:nth-of-type(1) {
   overflow-y: hidden;
 }
-.scroll div {
-  font-family: 'QuinqueFive';
-  color: white;
-  -webkit-text-stroke: 1px black;
+h1 {
+  -webkit-text-stroke: 0.5px black;
 }
-
-.scroll {
-  white-space: nowrap;
-  width: 100%;
-  display: flex;
-  position: relative;
-}
-section .scroll div {
-  white-space: nowrap;
-  animation: animate 8s linear infinite;
-  animation-delay: -8s;
-}
-section .scroll div:nth-child(2) {
-  animation: animate2 8s linear infinite;
-  animation-delay: -4s;
-}
-.scream1 {
-  font-size: 300px;
+.ohmygod_wrap {
   transform: rotate(-13deg);
   margin-top: -100px;
+  font-size: 300px;
 }
-.scream2 {
-  font-size: 100px;
-  transform: rotate(10deg);
-  margin-top: -50px;
+.ohmygod_wrap > h1 {
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'QuinqueFive';
+  position: relative;
+  animation: ohmygod 2s linear reverse infinite;
+  &:hover {
+    animation-play-state: paused;
+    animation: shake 0.5s linear infinite;
+  }
 }
-.scream3 {
-  font-size: 60px;
+
+.iwanttokillthem_wrap > h1 {
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'QuinqueFive';
+  animation: iwanttokillthem 6s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+    animation: shake 0.5s linear infinite;
+  }
+}
+.iwanttokillthem_wrap {
+  font-size: 400px;
+  position: relative;
+}
+.idontwanttodie_wrap {
   transform: rotate(25deg);
   margin-top: -50px;
-  z-index: 3;
+  position: relative;
+  z-index: 2;
+  font-size: 60px;
 }
-.scream4 {
-  font-size: 100px;
+.idontwanttodie_wrap > h1 {
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'QuinqueFive';
+  animation: idontwanttodie 3s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+    animation: shake 0.5s linear infinite;
+  }
+}
+.whatfor_wrap {
+  transform: rotate(10deg);
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+  font-size: 150px;
+}
+.whatfor_wrap > h1 {
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'QuinqueFive';
+  animation: whatfor 3s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+    animation: shake 0.5s linear infinite;
+  }
+}
+.whatididtodeserve_wrap {
   transform: rotate(-6deg);
   margin-top: -80px;
+  position: relative;
   z-index: 1;
+  font-size: 100px;
 }
-.scream5 {
-  font-size: 400px;
+.whatididtodeserve_wrap > h1 {
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'QuinqueFive';
+  animation: whatididtodeserve 4s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+    animation: shake 0.5s linear infinite;
+  }
 }
-.scream6 {
-  font-size: 86px;
+
+.why_wrap {
   transform: rotate(5deg);
   margin-top: -50px;
+  position: relative;
   z-index: 1;
+  font-size: 86px;
 }
-.line1:hover {
-  animation-play-state: paused;
-  animation: shake 0.5s linear infinite;
-  animation-delay: 0s;
-}
-.line1:hover ~ .line2 {
-  animation-play-state: paused;
-  animation: shake 0.5s linear infinite;
-  animation-delay: 0s;
-}
-.line2:hover {
-  animation-play-state: paused;
-  animation: shake 0.5s linear infinite;
-  animation-delay: 0s;
-}
-.line2:hover ~ .line1 {
-  animation-play-state: paused;
-  animation: shake 0.5s linear infinite;
-  animation-delay: 0s;
+.why_wrap > h1 {
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'QuinqueFive';
+  animation: why 3s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+    animation: shake 0.5s linear infinite;
+  }
 }
 .system_message {
   font-family: 'Press Start 2P';
@@ -146,6 +183,12 @@ section .scroll div:nth-child(2) {
 }
 .message_wrap:nth-of-type(3) .system_message:before {
   animation: third_glitch 2.5s linear infinite;
+}
+.message_wrap:nth-of-type(4) .system_message:before {
+  animation: forth_glitch 2.5s linear infinite;
+}
+.message_wrap:nth-of-type(5) .system_message:before {
+  animation: fifth_glitch 2.5s linear infinite;
 }
 .message_wrap {
   position: relative;
@@ -247,7 +290,7 @@ section .scroll div:nth-child(2) {
 #l15,
 #l16 {
   &:hover {
-    animation-play-state: paused;
+    animation: flip 0.5s linear infinite;
   }
 }
 #l1 {
@@ -415,22 +458,128 @@ section .scroll div:nth-child(2) {
 .helpme {
   display: flex;
   animation: run 7s infinite linear;
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 .messages {
-  display: flex;
   width: 100%;
   margin-top: 20px;
+  overflow: hidden;
 }
-.first_app {
-  font-size: 50px;
+.first_app,
+.second_app,
+.third_app,
+.forth_app {
+  font-size: 60px;
   color: white;
   font-family: 'Helvetica';
   border: 1px solid white;
-  width: 13em;
+  background-color: black;
   line-height: 1.2em;
-  text-align: justify;
   padding: 0.4em;
+  position: relative;
   text-justify: inter-word;
+  text-align: justify;
+  height: 100%;
+  z-index: 1;
+  &:hover {
+    z-index: 2;
+  }
+}
+.forth_app {
+  width: 9em;
+  margin-left: auto;
+  margin-right: 3%;
+  margin-top: -6em;
+  z-index: 2;
+  animation: background_blink 1.5s steps(1) infinite;
+  animation-delay: -1s;
+  &:hover::after {
+    content: 'ОШИБКА';
+    font-family: 'Press Start 2P';
+    line-height: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    animation: go_down 1s linear infinite;
+  }
+}
+.third_app {
+  width: 9em;
+  position: relative;
+  margin-left: 2%;
+  margin-top: -2em;
+  animation: background_blink 1.5s steps(1) infinite;
+  animation-delay: -0.5s;
+  z-index: 2;
+  &:hover::before {
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  &:hover::after {
+    content: 'ОШИБКА';
+    font-family: 'Press Start 2P';
+    line-height: 1em;
+    font-size: 1.5em;
+    position: absolute;
+    top: 40%;
+    color: white;
+    overflow-y: clip;
+    animation: go_left 1s linear infinite;
+  }
+}
+.second_app {
+  width: 11em;
+  font-size: 50px;
+  position: relative;
+  margin-top: -25%;
+  margin-left: auto;
+  margin-right: 7%;
+  overflow: hidden;
+  animation: background_blink 1s steps(1) infinite;
+  animation-delay: 0.5s;
+  &:hover::before {
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  &:hover::after {
+    content: 'ОШИБКА';
+    font-family: 'Press Start 2P';
+    line-height: 1em;
+    font-size: 1.5em;
+    position: absolute;
+    top: 40%;
+    color: white;
+    overflow-y: clip;
+    animation: go_right 1s linear infinite;
+  }
+}
+
+.first_app {
+  width: 12em;
   position: relative;
   margin-left: 1em;
   animation: background_blink 1s steps(1) infinite;
@@ -453,16 +602,83 @@ section .scroll div:nth-child(2) {
     animation: error 1s linear infinite;
   }
 }
-.first_app span {
+.first_app span,
+.second_app span,
+.third_app span,
+.forth_app span {
   animation: blink_white 1.3s steps(1) infinite;
   animation-delay: calc(var(--i) * -0.2s);
 }
-.first_app .box {
+.first_app .box,
+.second_app .box,
+.third_app .box,
+.forth_app .box {
   animation: box steps(1) infinite;
   animation-delay: calc(var(--i) * -0.2s);
   animation-duration: calc(var(--i) * 1s);
 }
-.first_app .big_box {
+
+.first_app .big_box,
+.second_app .big_box,
+.third_app .big_box,
+.forth_app .big_box {
   animation: big_box 2s steps(1) infinite;
   animation-delay: calc(var(--i) * -0.2s);
+}
+footer {
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+  margin-top: -10%;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.particles {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+.particles span {
+  position: relative;
+  /* width: calc(0.4vw * var(--i));
+  height: calc(0.4vw * var(--i)); */
+  width: calc(4px * var(--i));
+  height: calc(4px * var(--i));
+  background: white;
+  border-radius: 50%;
+  animation: balls 1s linear infinite;
+  animation-duration: calc(50s / var(--i));
+  animation-delay: calc(-2s * var(--i));
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.info {
+  font-family: 'Press Start 2P';
+  font-size: 25px;
+  color: white;
+  display: flex;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 25%;
+  margin-bottom: 5%;
+}
+.info div {
+  padding: 0.8em;
+  text-align: center;
+  background-color: black;
+  border: 2px white solid;
+  z-index: 5;
+  &:hover {
+    animation: go_black 0.1s linear infinite;
+  }
 }
