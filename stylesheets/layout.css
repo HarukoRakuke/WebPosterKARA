@@ -6,6 +6,7 @@ body {
   margin: 0 auto;
   border-left: 1px white solid;
   border-right: 1px white solid;
+  border-bottom: 1px white solid;
   position: relative;
   font-family: sans-serif;
 }
@@ -394,7 +395,7 @@ h1 {
   font-family: 'Ghostsigns';
   animation: l15 1.5s steps(1) infinite;
   transform: rotate(15deg);
-  width: 0.88em;
+  width: 0.78em;
   margin-top: 0.35em;
   line-height: 0.55em;
   animation-delay: 0.9s;
@@ -402,7 +403,7 @@ h1 {
 #l16 {
   animation: l16 2s steps(1) infinite;
   font-family: 'Mrakobes';
-  width: 0.98em;
+  width: 0.3em;
   transform: rotate(-15deg);
   margin-top: 0.55em;
   line-height: 0.55em;

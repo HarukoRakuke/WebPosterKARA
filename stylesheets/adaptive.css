@@ -133,11 +133,31 @@
     margin-bottom: 15px;
   }
 }
+@media all and (max-width: 768px) and (min-width: 413px) {
+  .ghost_wrap:nth-of-type(2) {
+    position: absolute;
+    width: 65%;
+    top: 0;
+    left: 0;
+  }
+  .ghosts_container {
+    flex-direction: column;
+    width: 35%;
+    margin-left: auto;
+  }
+}
 @media all and (max-width: 414px) {
   .system_message {
     width: 100%;
     animation-timeline: none;
+    border-style: solid;
+    border-color: white;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
   }
+
   .message_wrap {
     margin-top: 0;
   }
@@ -162,7 +182,10 @@
     display: none;
   } */
   .ghosts_container {
+    flex-direction: row;
+    height: auto;
     flex-wrap: wrap;
+    width: 100%;
   }
   .ghost_wrap:nth-of-type(1),
   .ghost_wrap:nth-of-type(3) {
@@ -177,6 +200,7 @@
   .ghost_wrap:nth-of-type(2) {
     width: 100%;
     order: 1;
+    position: relative;
   }
   .iwanttokillthem_wrap {
     font-size: 200px;
@@ -197,10 +221,14 @@
     font-size: 150px;
   }
   .letters span {
-    font-size: 105px;
+    font-size: 173px;
   }
-  .messages {
-    flex-direction: column;
+  section:nth-of-type(4) {
+    height: 80vh;
+    overflow: hidden;
+  }
+  .rotate {
+    transform: rotate(90deg);
   }
   .first_app,
   .second_app,
@@ -211,6 +239,7 @@
   }
   .third_app {
     margin-top: 1em;
+    margin-bottom: 1em;
   }
   .second_app {
     font-size: 32px;
