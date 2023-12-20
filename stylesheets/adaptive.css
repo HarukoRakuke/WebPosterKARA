@@ -221,11 +221,12 @@
     font-size: 150px;
   }
   .letters span {
-    font-size: 173px;
+    font-size: 153px;
   }
   section:nth-of-type(4) {
     height: 80vh;
     overflow: hidden;
+    max-height: 762px;
   }
   .rotate {
     transform: rotate(90deg);
