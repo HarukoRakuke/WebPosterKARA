@@ -148,7 +148,7 @@ h1 {
     animation: message_stable 1s linear infinite;
   } */
 }
-section:nth-of-type(odd).system_message {
+section:nth-of-type(odd) .system_message {
   padding-left: 1.5em;
 }
 section:nth-of-type(even) .system_message {
@@ -486,7 +486,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
   height: 100%;
   z-index: 1;
   &:hover {
-    z-index: 2;
+    z-index: 3;
   }
 }
 .forth_app {
@@ -495,7 +495,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
   margin-right: 3%;
   margin-top: -6em;
   z-index: 2;
-  animation: background_blink 1.5s steps(1) infinite;
+  animation: black_blink 1.5s steps(1) infinite;
   animation-delay: -1s;
   &:hover::after {
     content: 'ОШИБКА';
@@ -520,7 +520,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
   position: relative;
   margin-left: 2%;
   margin-top: -2em;
-  animation: background_blink 1.5s steps(1) infinite;
+  animation: black_blink 1.7s steps(1) infinite;
   animation-delay: -0.5s;
   z-index: 2;
   &:hover::before {
@@ -554,7 +554,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
   margin-left: auto;
   margin-right: 7%;
   overflow: hidden;
-  animation: background_blink 1s steps(1) infinite;
+  animation: black_blink 1s steps(1) infinite;
   animation-delay: 0.5s;
   &:hover::before {
     content: '';
@@ -571,7 +571,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
     content: 'ОШИБКА';
     font-family: 'Press Start 2P';
     line-height: 1em;
-    font-size: 1.5em;
+    font-size: 1.75em;
     position: absolute;
     top: 40%;
     color: white;
@@ -584,7 +584,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
   width: 12em;
   position: relative;
   margin-left: 1em;
-  animation: background_blink 1s steps(1) infinite;
+  animation: black_blink 1s steps(1) infinite;
   animation-delay: 0.3s;
   &:hover::after {
     content: 'ОШИБКА';

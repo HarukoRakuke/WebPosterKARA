@@ -372,16 +372,21 @@
     color: white;
   }
 }
-@keyframes background_blink {
+
+@keyframes black_blink {
   0% {
     background-color: black;
-    color: white;
+    color: black;
   }
-  50% {
+  45% {
     background-color: white;
     color: black;
   }
-  100% {
+  60% {
+    background-color: black;
+    color: black;
+  }
+  80% {
     background-color: black;
     color: white;
   }
@@ -395,11 +400,14 @@
     box-shadow: -0.4em 0px 0px black, 0.9em 0px 0px black;
   }
   25%,
-  40%,
   65% {
     background-color: white;
     color: black;
     box-shadow: -0.4em 0px 0px white, 0.9em 0px 0px white;
+  }
+  40% {
+    background-color: black;
+    color: black;
   }
   100% {
     background-color: black;
@@ -829,7 +837,7 @@
     line-height: 1em;
   }
   50% {
-    line-height: 7.2em;
+    line-height: 6.2em;
   }
   100% {
     line-height: 1em;
@@ -841,8 +849,8 @@
     right: 0;
   }
   50% {
-    top: 88%;
-    right: 23%;
+    top: 85%;
+    right: 11%;
   }
   100% {
     top: 0;
