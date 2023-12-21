@@ -266,10 +266,12 @@ section:nth-of-type(5) .message_wrap .system_message:before {
   }
 }
 .letters {
+  padding: 2vw 0;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   overflow-x: clip;
+  justify-content: center;
 }
 .letters > span {
   font-size: 265px;
@@ -326,7 +328,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
 #l5 {
   font-family: 'ksms';
   animation: l5 1.5s steps(1) infinite;
-  width: 0.58em;
+  width: 0.48em;
   animation-delay: -1.2s;
   margin-top: -0.15em;
 }
@@ -376,14 +378,14 @@ section:nth-of-type(5) .message_wrap .system_message:before {
   animation: l12 1.5s steps(1) infinite;
   transform: rotate(-15deg);
   margin-top: 0.25em;
-  width: 0.68em;
+  width: 0.48em;
   animation-delay: 0.6s;
 }
 #l13 {
   font-family: 'Rezok';
   animation: l13 1.5s steps(1) infinite;
   transform: rotate(15deg);
-  width: 0.95em;
+  width: 0.75em;
   animation-delay: 0.4s;
 }
 #l14 {
@@ -404,7 +406,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
 #l16 {
   animation: l16 2s steps(1) infinite;
   font-family: 'Mrakobes';
-  width: 0.3em;
+  width: 0.5em;
   transform: rotate(-15deg);
   margin-top: 0.55em;
   line-height: 0.55em;
