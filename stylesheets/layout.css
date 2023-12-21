@@ -45,7 +45,7 @@ h1 {
   display: inline-block;
   white-space: nowrap;
   font-family: 'QuinqueFive';
-  animation: iwanttokillthem 6s linear infinite;
+  animation: iwanttokillthem 11s linear infinite;
   &:hover {
     animation-play-state: paused;
     animation: shake 0.5s linear infinite;
@@ -116,6 +116,7 @@ h1 {
   position: relative;
   z-index: 1;
   font-size: 86px;
+  margin-bottom: 10px;
 }
 .why_wrap > h1 {
   color: white;
@@ -147,18 +148,18 @@ h1 {
     animation: message_stable 1s linear infinite;
   } */
 }
-.message_wrap:nth-of-type(odd) .system_message {
+section:nth-of-type(odd).system_message {
   padding-left: 1.5em;
 }
-.message_wrap:nth-of-type(even) .system_message {
+section:nth-of-type(even) .system_message {
   margin-left: auto;
   padding-right: 1.5em;
   text-align: right;
 }
-.message_wrap:nth-of-type(odd) {
+section:nth-of-type(odd) .message_wrap {
   margin-left: 40px;
 }
-.message_wrap:nth-of-type(even) {
+section:nth-of-type(even) .message_wrap {
   margin-right: 40px;
 }
 .system_message:before {
@@ -169,26 +170,26 @@ h1 {
   white-space: pre-wrap;
   width: 80%;
 }
-.message_wrap:nth-of-type(even) .system_message:before {
+section:nth-of-type(even) .message_wrap .system_message:before {
   text-align: right;
   right: 1.5em;
 }
-.message_wrap:nth-of-type(odd) .system_message:before {
+section:nth-of-type(odd) .message_wrap .system_message:before {
   left: 1.5em;
 }
-.message_wrap:nth-of-type(1) .system_message:before {
+section:nth-of-type(1) .message_wrap .system_message:before {
   animation: first_glitch 2.5s linear infinite;
 }
-.message_wrap:nth-of-type(2) .system_message:before {
+section:nth-of-type(2) .message_wrap .system_message:before {
   animation: second_glitch 2.5s linear infinite;
 }
-.message_wrap:nth-of-type(3) .system_message:before {
+section:nth-of-type(3) .message_wrap .system_message:before {
   animation: third_glitch 2.5s linear infinite;
 }
-.message_wrap:nth-of-type(4) .system_message:before {
+section:nth-of-type(4) .message_wrap .system_message:before {
   animation: forth_glitch 2.5s linear infinite;
 }
-.message_wrap:nth-of-type(5) .system_message:before {
+section:nth-of-type(5) .message_wrap .system_message:before {
   animation: fifth_glitch 2.5s linear infinite;
 }
 .message_wrap {
