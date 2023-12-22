@@ -303,71 +303,71 @@ section:nth-of-type(5) .message_wrap .system_message:before {
 #l1 {
   font-family: 'Ghostsigns';
   /* transform: rotate(-15deg); */
-  width: 0.98em;
+  width: 1em;
   animation: l1 1.5s steps(1) infinite;
-  margin-top: 0.25em;
+  margin-top: 0.2em;
 }
 #l2 {
   font-family: 'Boris';
-  width: 0.85em;
-  margin-top: 0.35em;
+  width: 0.9em;
+  margin-top: 0.3em;
   animation: l2 1.5s steps(1) infinite;
   animation-delay: 1.3s;
 }
 #l3 {
   font-family: 'Truin';
-  width: 0.55em;
+  width: 0.5em;
   animation: l3 1.5s steps(1) infinite;
   animation-delay: -0.3s;
-  margin-top: 0.25em;
+  margin-top: 0.2em;
 }
 #l4 {
   font-family: 'Ghostsigns';
-  margin-top: 0.4em;
-  width: 0.28em;
+  margin-top: 0.5em;
+  width: 0.3em;
   animation: l4 1.5s steps(1) infinite;
   animation-delay: -0.5s;
 }
 #l5 {
   font-family: 'ksms';
   animation: l5 1.5s steps(1) infinite;
-  width: 0.48em;
+  width: 0.5em;
   animation-delay: -1.2s;
-  margin-top: -0.15em;
+  margin-top: -0.2em;
 }
 #l6 {
   font-family: 'Mrakobes';
   animation: l6 1.5s steps(1) infinite;
-  margin-top: 0.45em;
-  width: 0.18em;
+  margin-top: 0.6em;
+  width: 0.2em;
   animation-delay: 0.1s;
 }
 #l7 {
   font-family: 'Atonic';
   animation: l7 1.5s steps(1) infinite;
-  width: 0.65em;
-  margin-top: 0.25em;
+  width: 0.6em;
+  margin-top: 0.2em;
   animation-delay: 0.8s;
 }
 #l8 {
   font-family: 'VPCH2';
   animation: l8 1.5s steps(1) infinite;
   transform: rotate(-15deg);
-  width: 0.55em;
-  margin-top: 0.25em;
+  width: 0.5em;
+  margin-top: 0.2em;
   animation-delay: -0.8s;
 }
 #l9 {
   font-family: 'Druzhok';
   animation: l9 1.5s steps(1) infinite;
-  width: 0.55em;
+  width: 0.5em;
   animation-delay: -1.2s;
 }
 #l10 {
   font-family: 'ksms';
   animation: l10 1.5s steps(1) infinite;
   /* transform: rotate(-15deg); */
-  width: 0.58em;
+  width: 0.6em;
   animation-delay: -0.7s;
 }
 #l11 {
@@ -380,39 +380,39 @@ section:nth-of-type(5) .message_wrap .system_message:before {
   font-family: 'Druzhok';
   animation: l12 1.5s steps(1) infinite;
   transform: rotate(-15deg);
-  margin-top: 0.25em;
-  width: 0.48em;
+  margin-top: 0.2em;
+  width: 0.5em;
   animation-delay: 0.6s;
 }
 #l13 {
   font-family: 'Rezok';
   animation: l13 1.5s steps(1) infinite;
   transform: rotate(15deg);
-  width: 0.75em;
+  width: 0.7em;
   animation-delay: 0.4s;
 }
 #l14 {
   font-family: 'ksms';
   animation: l14 1.5s steps(1) infinite;
-  width: 0.48em;
+  width: 0.5em;
   animation-delay: 0.2s;
 }
 #l15 {
   font-family: 'Ghostsigns';
   animation: l15 1.5s steps(1) infinite;
   transform: rotate(15deg);
-  width: 0.78em;
-  margin-top: 0.35em;
-  line-height: 0.55em;
+  width: 0.8em;
+  margin-top: 0.3em;
+  line-height: 0.5em;
   animation-delay: 0.9s;
 }
 #l16 {
   animation: l16 2s steps(1) infinite;
   font-family: 'Mrakobes';
-  width: 0.5em;
+  width: 0.7em;
   transform: rotate(-15deg);
-  margin-top: 0.55em;
-  line-height: 0.55em;
+  margin-top: 0.5em;
+  line-height: 0.5em;
   animation-delay: -1.1s;
 }
 .letter_wrap {

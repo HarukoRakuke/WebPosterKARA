@@ -556,17 +556,14 @@
   }
   5% {
     color: white;
-    font-family: 'Mrabokes';
+    font-family: 'Druzhok';
   }
   70% {
     color: white;
-    font-family: 'Druzhok';
+    font-family: 'Mrakobes';
   }
   80% {
     color: rgba(0, 0, 0, 0);
-  }
-  95% {
-    font-family: 'Druzhok';
   }
 }
 @keyframes l7 {
