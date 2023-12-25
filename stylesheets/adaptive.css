@@ -27,7 +27,7 @@
 
 @media all and (max-width: 1440px) and (min-width: 360px) {
   .ghost_wrap {
-    width: 34vw;
+    width: 35vw;
   }
   .ghost_wrap:nth-of-type(2) {
     margin-left: 0;
@@ -225,7 +225,6 @@
   }
   section:nth-of-type(4) {
     height: 90vh;
-    overflow: hidden;
     max-height: 762px;
   }
   section:nth-of-type(4) .message_wrap {
@@ -235,6 +234,9 @@
   }
   .rotate {
     transform: rotate(90deg);
+  }
+  .messages {
+    margin-top: 20px;
   }
   .first_app,
   .second_app,
@@ -250,11 +252,12 @@
   .second_app {
     font-size: 32px;
   }
-  .second_app,
-  .forth_app {
+  .second_app {
     margin-left: auto;
     margin-right: 0;
     margin-top: 1em;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 @media all and (max-width: 360px) {

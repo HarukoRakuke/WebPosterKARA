@@ -14,10 +14,11 @@ body {
 section {
   position: relative;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
-section:nth-of-type(1) {
-  overflow-y: hidden;
+
+section:nth-of-type(5) {
+  overflow: visible;
 }
 h1 {
   -webkit-text-stroke: 0.5px black;
@@ -220,12 +221,6 @@ section:nth-of-type(5) .message_wrap .system_message:before {
 .ghost_wrap {
   width: 550px;
   height: auto;
-}
-.ghost_wrap:nth-of-type(2) {
-  margin-left: -5%;
-}
-.ghost_wrap:nth-of-type(3) {
-  margin-left: -5%;
 }
 .ghost1,
 .ghost2,
@@ -466,7 +461,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
 /* дисплеи */
 .messages {
   width: 100%;
-  margin-top: 20px;
+  margin-top: -20px;
   overflow: hidden;
 }
 .first_app,
@@ -519,6 +514,7 @@ section:nth-of-type(5) .message_wrap .system_message:before {
   position: relative;
   margin-top: -25%;
   margin-left: auto;
+  min-width: 360px;
   margin-right: 7%;
   overflow: hidden;
   animation: black_blink 1s steps(1) infinite;
