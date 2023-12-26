@@ -773,7 +773,7 @@
 /* анимациия бегущей строки с раскадровками */
 @keyframes run {
   100% {
-    transform: translate(-215%);
+    transform: translate(-3125px);
   }
 }
 @keyframes p {
