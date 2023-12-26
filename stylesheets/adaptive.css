@@ -238,6 +238,9 @@
   .messages {
     margin-top: 20px;
   }
+  .first_app {
+    margin-bottom: 1em;
+  }
   .first_app,
   .second_app,
   .third_app,
@@ -255,7 +258,7 @@
   .second_app {
     margin-left: auto;
     margin-right: 0;
-    margin-top: 1em;
+    margin-top: 0;
     width: 100%;
     box-sizing: border-box;
   }
